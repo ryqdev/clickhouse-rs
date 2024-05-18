@@ -6,3 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dotenv = "0.15.0"
+tokio = { version = "1.37.0", features = ["rt", "rt-multi-thread", "macros"] }
+clickhouse = { version = "0.11.6", features = ["test-util", "time"] }
+time = "0.3.36"
+serde = { version = "1.0.202", features = ["derive"] }
+anyhow = "1.0.85"
